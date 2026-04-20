@@ -6,3 +6,4 @@ e935661 (HEAD -> master) Merge branch 'feature/saluto'
 b8c1d1c aggiunta file note
 8d9f883 aggiunta in saluto il file saluto
 1b4234c primo commit file readme
+
