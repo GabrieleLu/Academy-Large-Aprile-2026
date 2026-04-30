@@ -28,6 +28,7 @@ public class SalutoController {
 
     @GetMapping("/saluto")
     public String saluto() {
+    	
         return "Ciao dal mio primo Spring Boot!!!!";
     }
     
