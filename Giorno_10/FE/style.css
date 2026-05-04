@@ -1,0 +1,74 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Lista */
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 650px;
+    list-style: none;
+}
+
+/* Card ridisegnata */
+.user-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px); /* effetto vetro */
+    padding: 18px 22px;
+    border-radius: 10px; /* meno arrotondato */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-left: 5px solid #6c63ff; /* accento laterale */
+    
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover più “pulito” */
+.user-card:hover {
+    transform: translateY(-5px); /* invece dello scale */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-left: 5px solid #ff6b6b; /* cambia colore */
+}
+
+/* Testi */
+.user-info h3 {
+    color: #2d3436;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.user-info p {
+    color: #636e72;
+    font-size: 0.85em;
+}
+
+/* Bottone */
+.btn-dettaglio {
+    text-decoration: none;
+    color: white;
+    background: #6c63ff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    transition: background 0.3s;
+}
+
+.btn-dettaglio:hover {
+    background: #4834d4;
+}
